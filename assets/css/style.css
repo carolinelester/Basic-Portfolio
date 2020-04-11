@@ -1,0 +1,75 @@
+*   {
+    box-sizing: border-box;
+}
+
+/* Background pattern from Toptal Subtle Patterns #d5e1e8 */
+
+body { 
+  font-family: 'Quicksand', sans-serif;
+  width: 960px;
+  margin: 0 auto 0 auto;
+  background-image: url(seigaiha.png)
+}
+
+.logo {
+    background-color: #ebf3f7;
+    padding: 20px;
+    border: navy 1px dotted;
+    position: absolute;
+    left: 100px;
+
+}
+/* #9db9c9
+*/
+header {
+    background-color: #9db9c9;
+    padding: 20px;
+    border-bottom: 1px solid #777777;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    overflow: hidden;
+    clear:both;
+    
+}
+
+.header a {
+    float: left;
+    color: #777777;
+    text-align: center;
+    padding: 10px;
+    text-decoration: none;
+    font-size: 18px; 
+    line-height: 25px;
+    border-radius: 4px;
+    font-family: 'Quicksand', sans-serif;
+}
+  
+.header a:hover {
+    background-color: #d5e1e8;
+    color: white;
+    text-shadow: 2px #777777;
+}
+  
+.header a.active {
+    background-color: #d5e1e8;
+    color: white;
+    text-shadow: 2px #777777;
+}
+  
+.header-right {
+    float: right;
+}
+  
+@media screen and (max-width: 750px) {
+    .header a {
+      float: none;
+      display: block;
+      text-align: left;
+}
+    
+.header-right {
+    float: none;
+}
